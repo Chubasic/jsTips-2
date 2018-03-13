@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="comntainer">
+            <div class="row">
+                <div class="col">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Registration</button>
+                    <div id="test"></div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="registration">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" data-input="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword">Password</label>
+                                    <input type="password" class="form-control"  data-input="pass" id="InputPassword" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="RepeatInputPassword">Repeat Password</label>
+                                    <input type="password" class="form-control" data-input="pass" id="RepeatInputPassword" placeholder="Repeat Password">
+                                </div>
+                                <form class="form-group">
+                                    <label for="lang">Language</label>
+                                    <input class="form-control mr-sm-2" data-input="user_lang" id="lang" type="search" placeholder="Your language" aria-label="Search" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    <div class="dropdown-menu" aria-labelledby="lang">
+                                            <small>Supported languages</small>
+                                        <ul id="results">
+                                            <li value="Deutsch"><a href="#">Deutsch</a></li>
+                                            <li value="English"><a href="#">English</a></li>
+                                            <li value="Spanish"><a href="#">Spanish</a></li>
+                                            <li value="French"><a href="#">French</a></li>
+                                        </ul>                                             
+                                    </div>
+                                </form>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-info">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+    <div class=" form-inline">
+        <form class="form-inline" id="IpFields">
+            <input type="text" data-binary="first" class="form-control mb-2 mr-sm-2" id="inlineFormInputBin0" placeholder="11000000">
+            
+            <input type="text" data-binary="second" class="form-control mb-2 mr-sm-2" id="inlineFormInputBin1" placeholder="10101000">
+            
+            <input type="text" data-binary="third" class="form-control mb-2 mr-sm-2" id="inlineFormInputBin2" placeholder="0">
+            
+            <input type="text" data-binary="fourth" class="form-control mb-2 mr-sm-2" id="inlineFormInputBin3" placeholder="1">
+        </form>        
+    </div>
+    <div class="row">
+        <div class="col-12">        
+            <div class="alert alert-success d-none" id="alertIp" role="alert">
+                <h2>IP</h2>
+                <h3 id="decIp">0.0.0.0</h3>
+            </div>
+        </div>    
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script async src="js/bin.js"></script>
+    <script async src="js/main.js"></script>
+</body>
+
+</html>
